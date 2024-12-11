@@ -15,6 +15,15 @@ public class Ex1Main {
             System.out.println("Enter a string as number#1 (or \"quit\" to end the program): ");
             num1 = sc.next();
             if (!num1.equals("quit")) {
+            }
+            if (isNumber(num1)){
+                if (number2Int)
+            }
+            else System.out.print("num1= " + num1 + " is number: false , value: -1");
+                 System.out.print("ERR: num1 is in the wrong format! ("+num1+")");
+            break;
+
+
                 // add your code here
 
                 /////////////////////

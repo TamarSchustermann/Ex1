@@ -45,9 +45,6 @@ public class Ex1 {
         return -1;
     }
 
-    /**
-     * This static function checks if the given String (g) is in a valid "number" format.
-     */
     public static boolean isNumber(String a) {
         if (a == null || a.isEmpty()) {
             return false;
@@ -73,10 +70,6 @@ public class Ex1 {
         return true;
     }
 
-    /**
-     * Convert the given number (num) to a decimal representation (as int).
-     * It the given number is not in a valid format returns -1.
-     */
     public static int number2Int(String num) {
         int ans = -1;
         if (isNumber(num)) {
@@ -88,25 +81,18 @@ public class Ex1 {
         return ans;
     }
 
-    /**
-     * Calculate the number representation (in basis base).
-     * If num<0 or base is not in [2,16], return "".
-     */
     public static String int2Number(int num, int base) {
         String ans = "";
-        // Add your code here
-        if (isNumber(int num, int base)) {
-            int result = Integer.parseInt(int num, int base);
-        } else {
-            System.out.print("");
-        }
-        ////////////////////
+//        // Add your code here
+//        if (isNumber(int num, int base)) {
+//            int result = Integer.parseInt(int num, int base);
+//        } else {
+//            System.out.print("");
+//        }
+//        ////////////////////
         return ans;
     }
 
-    /**
-     * Checks if the two numbers have the same value.
-     */
     public static boolean equals(String n1, String n2) {
         boolean ans = true;
         // Add your code here
@@ -115,10 +101,7 @@ public class Ex1 {
         }
         return ans;
         }
-    /**
-     * This static function search for the array index with the largest number (in value).
-     * In case there are more than one maximum - returns the first index.
-     */
+
         public static int maxIndex(String[] arr){
             int ans = 0;
             int max = 0;
