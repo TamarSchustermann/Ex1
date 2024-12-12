@@ -16,40 +16,41 @@ public class Ex1Main {
             num1 = sc.next();
             if (!num1.equals("quit")) {
             }
-            if (isNumber(num1)) {
+            if (Ex1.isNumber(num1)) {
             }
-            if (number2Int(num1)) {
+            if (Ex1.number2Int(num1)) {
             }
-            System.out.print(num1);
-            { else System.out.print("num1= " + num1 + " is number: false , value: -1");
-                System.out.print("ERR: num1 is in the wrong format! (" + num1 + ")");
+            System.out.println(num1);
+            { else System.out.println("num1= " + num1 + " is number: false , value: -1");
+                System.out.println("ERR: num1 is in the wrong format! (" + num1 + ")");
             }
             break;
         }
 
         while (!num2.equals(quit) && !num2.equals(quit)) {
-            System.out.println();
-            System.out.println("Ex1 class solution:");
             System.out.println("Enter a string as number#2 (or \"quit\" to end the program): ");
             num2 = sc.next();
             if (!num2.equals("quit")) {
             }
-            if (isNumber(num2)) {
+            if (Ex1.isNumber(num2)) {
             }
-            if (number2Int(num2)) {
+            if (Ex1.number2Int(num2)) {
             }
-            System.out.print(num2);
-            else System.out.print("num2= " + num2 + " is number: false , value: -1");
-                System.out.print("ERR: num2 is in the wrong format! (" + num2 + ")");
-
+            System.out.println(num2);
+            else System.out.println("num2= " + num2 + " is number: false , value: -1");
+                System.out.println("ERR: num2 is in the wrong format! (" + num2 + ")");
             break;
         }
-        String base = "";
-        System.out.print("תכניס בסיס שבאלך");
-        if (isValidBasePart(base)) {
-        }
 
-        else System.out.print("מה שכתוב בפלט של בועז כשמכניסים בסיס לא תקין");
+        System.out.println("Enter a base for output: (a number [2,16])");
+        int base ;
+        if (Ex1.isValidBasePart(base)) {
+            System.out.println(num1 + " + " + num2 + " = " + );
+            System.out.println(num1 + " * " + num2 + " = " + );
+            System.out.println("Max number over " + + "is: " + );
+        }
+        else System.out.println("ERR: wrong base, should be [2,16], got (" + base + ")");
+
         System.out.println("quiting now...");
     }
 }
